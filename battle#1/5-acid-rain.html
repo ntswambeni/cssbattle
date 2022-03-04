@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+              background-color:#0B2429;
+              padding:22px 72px;
+              width:240px;
+              height:240px;
+              margin: 0
+            }
+            .container{
+              height:100%;
+              display:flex;
+              position:relative;
+            }
+            .item{
+              width:120px;
+              height:120px;
+              border-radius:50%;
+              background-color:#F3AC3C;
+              position: absolute;
+            }
+            .item div{
+              position: absolute;
+              top:0;
+              left:60px;
+              background-color:#F3AC3C;
+              width:60px;
+              height:60px;
+            }
+            .first{
+              bottom:0
+            }
+            .second{
+              top:50%;
+              left:50%;
+              transform: translate(-50%, -50%);
+              z-index: -1;
+              background-color: #998235;
+            }
+            .second div{
+              background-color: #998235;
+            }
+            .third{
+              top:0;
+              right:0;
+              z-index:-2;
+            }
+          </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item first">
+                  <div></div>
+              </div>
+              <div class="item second">
+                  <div></div>
+              </div>
+              <div class="item third"></div>
+        </div>
+    <body>
+</html>
