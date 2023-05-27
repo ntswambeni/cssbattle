@@ -1,0 +1,78 @@
+<div class="position-relative">
+  <div class="position-absolute size-60 semi-circle border-yellow left"></div>
+  <div class="ring size-100 border-yellow flex-center">
+    <div class="ring size-600 border-brown flex-center">
+      <div class="circle size-50 background-red"></div>
+    </div>
+  </div>
+  <div class="position-absolute size-60 semi-circle border-yellow right"></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background-color: #191210;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ring {
+    border: 20px solid;
+    border-radius: 50%;
+  }
+  .circle {
+    border-radius: 50%;
+  }
+  .size-100 {
+    width: 100px;
+    height: 100px;
+  }
+  .size-60 {
+    width: 60px;
+    height: 60px;
+  }
+  .size-50 {
+    width: 50px;
+    height: 50px;
+  }
+  .semi-circle {
+    height: 30px;
+    border: 20px solid;
+  }
+  .border-yellow {
+    border-color: #eca03d;
+  }
+  .border-brown {
+    border-color: #191210;
+  }
+  .border-red {
+    border-color: #84271c;
+  }
+  .background-red {
+    background-color: #84271c;
+  }
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .position-relative {
+    position: relative;
+  }
+  .position-absolute {
+    position: absolute;
+  }
+  .left {
+    left: -80;
+    top: 50%;
+    border-top: none;
+    border-radius: 0 0 60px 60px;
+  }
+  .right {
+    right: -80;
+    bottom: 50%;
+    border-bottom: none;
+    border-radius: 60px 60px 0 0;
+  }
+</style>
