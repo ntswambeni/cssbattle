@@ -1,0 +1,58 @@
+<div class="semi-circle face-up bottom-simi-circle left-semi-circle">
+  <div class="circle top-circle left-circle"></div>
+</div>
+<div class="semi-circle face-down top-simi-circle"></div>
+<div class="semi-circle face-up bottom-simi-circle right-semi-circle">
+  <div class="circle top-circle right-circle"></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background-color: #f5d6b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .semi-circle {
+    width: 60px;
+    height: 30px;
+    border: 20px solid #d86f45;
+    position: relative;
+  }
+  .face-down {
+    border-radius: 60px 60px 0 0;
+    border-bottom: none;
+  }
+  .face-up {
+    border-radius: 0 0 60px 60px;
+    border-top: none;
+  }
+  .circle {
+    background-color: #d86f45;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .top-circle {
+    top: -10;
+  }
+  .left-circle {
+    left: -20;
+  }
+  .right-circle {
+    right: -20;
+  }
+  .top-simi-circle {
+    margin-top: -50px;
+  }
+  .bottom-simi-circle {
+    margin-bottom: -50px;
+  }
+  .left-semi-circle {
+    margin-right: -20px;
+  }
+  .right-semi-circle {
+    margin-left: -20px;
+  }
+</style>
