@@ -1,0 +1,60 @@
+<div class="parenthesis left-parenthesis">
+  <div></div>
+  <div></div>
+</div>
+<div class="rhombus">
+  <div></div>
+</div>
+<div class="parenthesis right-parenthesis">
+  <div></div>
+  <div></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background: #222730;
+  }
+  .parenthesis div {
+    width: 0;
+    height: 0;
+  }
+  .left-parenthesis div:first-child {
+    border-top: 75px solid #4caab3;
+    border-left: 23px solid #4caab3;
+    border-right: 75px solid transparent;
+  }
+  .left-parenthesis div:last-child {
+    border-bottom: 75px solid #4caab3;
+    border-left: 23px solid #4caab3;
+    border-right: 75px solid transparent;
+  }
+  .right-parenthesis div:first-child {
+    border-top: 75px solid #4caab3;
+    border-right: 23px solid #4caab3;
+    border-left: 75px solid transparent;
+  }
+  .right-parenthesis div:last-child {
+    border-bottom: 75px solid #4caab3;
+    border-right: 23px solid #4caab3;
+    border-left: 75px solid transparent;
+  }
+  .rhombus {
+    width: 149.6px;
+    height: 149.6px;
+    background: #4caab3;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rhombus div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #393e46;
+  }
+</style>
