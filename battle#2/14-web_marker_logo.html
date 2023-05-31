@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="triangle point-down dark-orange"></div>
+  <div class="triangle point-down light-orange"></div>
+  <div class="triangle point-up light-orange"></div>
+  <div class="triangle point-up dark-orange"></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background-color: #f2f2b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    position: relative;
+    width: 150px;
+    height: 130px;
+  }
+
+  .triangle {
+    width: 0px;
+    height: 0px;
+    border: 75px solid;
+    position: absolute;
+  }
+  .dark-orange {
+    border-color: #fd4602;
+  }
+  .light-orange {
+    border-color: #ff6d00;
+  }
+  .point-down {
+    border-top-width: 130px;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+  .point-up {
+    border-bottom-width: 130px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    top: -75px;
+  }
+
+  .triangle:nth-child(1),
+  .triangle:nth-child(2) {
+    left: -45px;
+  }
+  .triangle:nth-child(2) {
+    margin-left: -20px;
+  }
+  .triangle:nth-child(3),
+  .triangle:nth-child(4) {
+    right: -45px;
+  }
+  .triangle:nth-child(3) {
+    margin-right: -20px;
+  }
+</style>
