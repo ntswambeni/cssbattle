@@ -1,0 +1,48 @@
+<div class="outer-circle">
+  <div class="wing left"></div>
+  <div class="circle"></div>
+  <div class="wing right"></div>
+</div>
+<style>
+  body {
+    position: relative;
+    z-index: -2;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b2429;
+  }
+  .outer-circle {
+    padding: 20px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 10px solid #998235;
+    position: relative;
+    background-color: #0b2429;
+  }
+  .wing {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: -1;
+  }
+  .left {
+    left: -50;
+    border-right: 65px solid #998235;
+    border-bottom: 65px solid transparent;
+    border-top: 65px solid transparent;
+  }
+  .right {
+    right: -50;
+    border-left: 65px solid #998235;
+    border-bottom: 65px solid transparent;
+    border-top: 65px solid transparent;
+  }
+  .circle {
+    padding: 25px;
+    border-radius: 50%;
+    border: 45px solid #f3ac3c;
+  }
+</style>
