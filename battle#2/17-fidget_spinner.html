@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="hallow-circle left"></div>
+  <div class="hallow-circle right"></div>
+  <div class="concave-container c-top">
+    <div class="filled-circle top"></div>
+  </div>
+  <div class="concave-container c-bottom">
+    <div class="filled-circle bottom"></div>
+  </div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background-color: #09042a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    position: relative;
+  }
+  .concave-container {
+    height: 80px;
+    width: 60px;
+    overflow: hidden;
+  }
+
+  .hallow-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 10px solid #e78481;
+    position: absolute;
+    transform: translate(0, -50%);
+  }
+  .filled-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 10px solid #09042a;
+    background-color: #f5bb9c;
+    margin-left: -9px;
+  }
+  .top {
+    box-shadow: 0 50px #e78481;
+  }
+  .c-top {
+    padding-bottom: 24px;
+  }
+  .bottom {
+    box-shadow: 0 -50px #e78481;
+  }
+  .left {
+    top: 50%;
+    left: -69px;
+  }
+  .right {
+    top: 50%;
+    right: -70px;
+  }
+</style>
