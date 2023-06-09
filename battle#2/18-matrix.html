@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="slice-container">
+    <div class="slice"></div>
+  </div>
+  <div class="slice-container">
+    <div class="slice"></div>
+  </div>
+  <div class="slice-container">
+    <div class="slice"></div>
+  </div>
+  <div class="slice-container">
+    <div class="slice"></div>
+  </div>
+  <div class="slice-container">
+    <div class="slice"></div>
+  </div>
+  <div class="slice-container">
+    <div class="slice"></div>
+  </div>
+  <div class="slice-container">
+    <div class="slice"></div>
+  </div>
+  <div class="slice-container">
+    <div class="slice"></div>
+  </div>
+  <div class="slice-container">
+    <div class="slice"></div>
+  </div>
+  <div class="slice-container">
+    <div class="slice"></div>
+  </div>
+  <div class="slice-container">
+    <div class="slice"></div>
+  </div>
+  <div class="slice-container">
+    <div class="slice"></div>
+  </div>
+</div>
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 400px;
+    height: 300px;
+    background: #5c434c;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .slice-container {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+  .slice {
+    width: 0;
+    border: 80px solid transparent;
+    border-top: 80px solid;
+    transform: rotate(-45deg);
+    border-radius: 50%;
+  }
+  .slice-container:nth-child(odd) .slice {
+    border-color: #f09462;
+  }
+  .slice-container:nth-child(even) .slice {
+    border-color: #f5d6b4;
+  }
+</style>
