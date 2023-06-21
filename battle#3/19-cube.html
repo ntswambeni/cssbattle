@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="flex">
+    <div class="skewed left"></div>
+    <div class="skewed right"></div>
+  </div>
+  <div class="yellow"></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background-color: #0b2429;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .flex {
+    display: flex;
+  }
+  div.yellow {
+    width: 100px;
+    height: 100px;
+    background: #f3ac3c;
+    transform: rotate(45deg);
+    margin-top: -15px;
+  }
+  div.skewed {
+    width: 70.71px;
+    height: 70.71px;
+  }
+  .left {
+    transform: skew(0, -45deg);
+    background: #998235;
+  }
+  .right {
+    transform: skew(0, 45deg);
+    background: #1a4341;
+  }
+</style>
