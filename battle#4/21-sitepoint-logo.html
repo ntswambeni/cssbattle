@@ -1,0 +1,44 @@
+<div>
+  <div class="key">
+    <div></div>
+  </div>
+  <div class="key">
+    <div></div>
+  </div>
+</div>
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    margin: 0 1px 1px 0;
+  }
+  .key {
+    width: 30px;
+    height: 71px;
+    background-color: #f2994a;
+    position: relative;
+    transform: rotate(45deg);
+  }
+  .key > div {
+    width: 80px;
+    height: 30px;
+    background-color: #f2994a;
+    position: absolute;
+    bottom: -29px;
+    border-radius: 0 5px 0 10px;
+  }
+  div > .key:last-child {
+    transform: rotate(-135deg);
+    background-color: #2d9cdb;
+    margin-left: 37.4px;
+    margin-top: 32px;
+    left: -0.5px;
+    bottom: -1px;
+  }
+  div > .key:last-child div {
+    background-color: #2d9cdb;
+  }
+</style>
