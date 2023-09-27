@@ -1,0 +1,48 @@
+<div>
+  <div class="leaf-big"></div>
+  <div class="leaf-small"></div>
+  <div class="leaf-small mirror-y"></div>
+  <div class="leaf-big mirror-x"></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background-color: #998235;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  .leaf-big {
+    width: 80px;
+    height: 100px;
+    background-color: #1a4341;
+    border-radius: 0 50px;
+  }
+
+  .leaf-small {
+    width: 80px;
+    height: 60px;
+    background-color: #f3ac3c;
+    border-radius: 0 50px;
+  }
+
+  .mirror-x {
+    transform: scaleX(-1);
+  }
+  .mirror-y {
+    transform: scaleY(-1);
+  }
+  .small {
+    transform: scale(0.75) rotate(90deg);
+    border-radius: 0 60px;
+  }
+</style>
